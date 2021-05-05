@@ -6,13 +6,13 @@
       "type": "string",
       "minLength": 1,
       "metadata": {
-        "description": "Username for the Virtual Machine."
+        "description": "admin12"
       }
     },
     "adminPassword": {
       "type": "securestring",
       "metadata": {
-        "description": "Password for the Virtual Machine."
+        "description": "Yashi@123456789"
       }
     },
     "dnsNameForPublicIP": {
