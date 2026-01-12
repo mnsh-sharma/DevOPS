@@ -8,7 +8,14 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    userRemoteConfigs: [[
+                        url: 'https://github.com/mnsh-sharma/DevOPS.git',
+                        credentialsId: 'GIThibpskey'
+                    ]]
+                ])
             }
         }
 
