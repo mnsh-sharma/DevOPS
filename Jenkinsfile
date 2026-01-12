@@ -13,7 +13,7 @@ pipeline {
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
                         url: 'https://github.com/mnsh-sharma/DevOPS.git',
-                        credentialsId: 'GIThibpskey'
+                        credentialsId: 'GITAKSRepo'
                     ]]
                 ])
             }
